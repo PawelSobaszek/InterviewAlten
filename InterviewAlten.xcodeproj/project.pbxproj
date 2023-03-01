@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9E316F29AFE019000799DC /* InterviewAltenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E316E29AFE019000799DC /* InterviewAltenApp.swift */; };
+		CE9E317129AFE019000799DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E317029AFE019000799DC /* ContentView.swift */; };
+		CE9E317329AFE01A000799DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9E317229AFE01A000799DC /* Assets.xcassets */; };
+		CE9E317629AFE01A000799DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9E317529AFE01A000799DC /* Preview Assets.xcassets */; };
+		CE9E317829AFE01A000799DC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E317729AFE01A000799DC /* Persistence.swift */; };
+		CE9E317B29AFE01A000799DC /* InterviewAlten.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9E317929AFE01A000799DC /* InterviewAlten.xcdatamodeld */; };
+		CE9E318529AFE01A000799DC /* InterviewAltenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E318429AFE01A000799DC /* InterviewAltenTests.swift */; };
+		CE9E318F29AFE01A000799DC /* InterviewAltenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E318E29AFE01A000799DC /* InterviewAltenUITests.swift */; };
+		CE9E319129AFE01A000799DC /* InterviewAltenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9E319029AFE01A000799DC /* InterviewAltenUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9E318129AFE01A000799DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9E316329AFE019000799DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9E316A29AFE019000799DC;
+			remoteInfo = InterviewAlten;
+		};
+		CE9E318B29AFE01A000799DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9E316329AFE019000799DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9E316A29AFE019000799DC;
+			remoteInfo = InterviewAlten;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE9E316B29AFE019000799DC /* InterviewAlten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewAlten.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9E316E29AFE019000799DC /* InterviewAltenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewAltenApp.swift; sourceTree = "<group>"; };
+		CE9E317029AFE019000799DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE9E317229AFE01A000799DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9E317529AFE01A000799DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE9E317729AFE01A000799DC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CE9E317A29AFE01A000799DC /* InterviewAlten.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InterviewAlten.xcdatamodel; sourceTree = "<group>"; };
+		CE9E318029AFE01A000799DC /* InterviewAltenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewAltenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9E318429AFE01A000799DC /* InterviewAltenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewAltenTests.swift; sourceTree = "<group>"; };
+		CE9E318A29AFE01A000799DC /* InterviewAltenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewAltenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9E318E29AFE01A000799DC /* InterviewAltenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewAltenUITests.swift; sourceTree = "<group>"; };
+		CE9E319029AFE01A000799DC /* InterviewAltenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewAltenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9E316829AFE019000799DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E317D29AFE01A000799DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E318729AFE01A000799DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9E316229AFE019000799DC = {
+			isa = PBXGroup;
+			children = (
+				CE9E316D29AFE019000799DC /* InterviewAlten */,
+				CE9E318329AFE01A000799DC /* InterviewAltenTests */,
+				CE9E318D29AFE01A000799DC /* InterviewAltenUITests */,
+				CE9E316C29AFE019000799DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9E316C29AFE019000799DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E316B29AFE019000799DC /* InterviewAlten.app */,
+				CE9E318029AFE01A000799DC /* InterviewAltenTests.xctest */,
+				CE9E318A29AFE01A000799DC /* InterviewAltenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9E316D29AFE019000799DC /* InterviewAlten */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E316E29AFE019000799DC /* InterviewAltenApp.swift */,
+				CE9E317029AFE019000799DC /* ContentView.swift */,
+				CE9E317229AFE01A000799DC /* Assets.xcassets */,
+				CE9E317729AFE01A000799DC /* Persistence.swift */,
+				CE9E317929AFE01A000799DC /* InterviewAlten.xcdatamodeld */,
+				CE9E317429AFE01A000799DC /* Preview Content */,
+			);
+			path = InterviewAlten;
+			sourceTree = "<group>";
+		};
+		CE9E317429AFE01A000799DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E317529AFE01A000799DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE9E318329AFE01A000799DC /* InterviewAltenTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E318429AFE01A000799DC /* InterviewAltenTests.swift */,
+			);
+			path = InterviewAltenTests;
+			sourceTree = "<group>";
+		};
+		CE9E318D29AFE01A000799DC /* InterviewAltenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E318E29AFE01A000799DC /* InterviewAltenUITests.swift */,
+				CE9E319029AFE01A000799DC /* InterviewAltenUITestsLaunchTests.swift */,
+			);
+			path = InterviewAltenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9E316A29AFE019000799DC /* InterviewAlten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9E319429AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAlten" */;
+			buildPhases = (
+				CE9E316729AFE019000799DC /* Sources */,
+				CE9E316829AFE019000799DC /* Frameworks */,
+				CE9E316929AFE019000799DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterviewAlten;
+			productName = InterviewAlten;
+			productReference = CE9E316B29AFE019000799DC /* InterviewAlten.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9E317F29AFE01A000799DC /* InterviewAltenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9E319729AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAltenTests" */;
+			buildPhases = (
+				CE9E317C29AFE01A000799DC /* Sources */,
+				CE9E317D29AFE01A000799DC /* Frameworks */,
+				CE9E317E29AFE01A000799DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9E318229AFE01A000799DC /* PBXTargetDependency */,
+			);
+			name = InterviewAltenTests;
+			productName = InterviewAltenTests;
+			productReference = CE9E318029AFE01A000799DC /* InterviewAltenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE9E318929AFE01A000799DC /* InterviewAltenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9E319A29AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAltenUITests" */;
+			buildPhases = (
+				CE9E318629AFE01A000799DC /* Sources */,
+				CE9E318729AFE01A000799DC /* Frameworks */,
+				CE9E318829AFE01A000799DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9E318C29AFE01A000799DC /* PBXTargetDependency */,
+			);
+			name = InterviewAltenUITests;
+			productName = InterviewAltenUITests;
+			productReference = CE9E318A29AFE01A000799DC /* InterviewAltenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9E316329AFE019000799DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CE9E316A29AFE019000799DC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CE9E317F29AFE01A000799DC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE9E316A29AFE019000799DC;
+					};
+					CE9E318929AFE01A000799DC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CE9E316A29AFE019000799DC;
+					};
+				};
+			};
+			buildConfigurationList = CE9E316629AFE019000799DC /* Build configuration list for PBXProject "InterviewAlten" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9E316229AFE019000799DC;
+			productRefGroup = CE9E316C29AFE019000799DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9E316A29AFE019000799DC /* InterviewAlten */,
+				CE9E317F29AFE01A000799DC /* InterviewAltenTests */,
+				CE9E318929AFE01A000799DC /* InterviewAltenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9E316929AFE019000799DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E317629AFE01A000799DC /* Preview Assets.xcassets in Resources */,
+				CE9E317329AFE01A000799DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E317E29AFE01A000799DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E318829AFE01A000799DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9E316729AFE019000799DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E317B29AFE01A000799DC /* InterviewAlten.xcdatamodeld in Sources */,
+				CE9E317829AFE01A000799DC /* Persistence.swift in Sources */,
+				CE9E317129AFE019000799DC /* ContentView.swift in Sources */,
+				CE9E316F29AFE019000799DC /* InterviewAltenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E317C29AFE01A000799DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E318529AFE01A000799DC /* InterviewAltenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9E318629AFE01A000799DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E318F29AFE01A000799DC /* InterviewAltenUITests.swift in Sources */,
+				CE9E319129AFE01A000799DC /* InterviewAltenUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9E318229AFE01A000799DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9E316A29AFE019000799DC /* InterviewAlten */;
+			targetProxy = CE9E318129AFE01A000799DC /* PBXContainerItemProxy */;
+		};
+		CE9E318C29AFE01A000799DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9E316A29AFE019000799DC /* InterviewAlten */;
+			targetProxy = CE9E318B29AFE01A000799DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE9E319229AFE01A000799DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE9E319329AFE01A000799DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9E319529AFE01A000799DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InterviewAlten/Preview Content\"";
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAlten;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9E319629AFE01A000799DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InterviewAlten/Preview Content\"";
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAlten;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE9E319829AFE01A000799DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAltenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewAlten.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InterviewAlten";
+			};
+			name = Debug;
+		};
+		CE9E319929AFE01A000799DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAltenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewAlten.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InterviewAlten";
+			};
+			name = Release;
+		};
+		CE9E319B29AFE01A000799DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAltenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InterviewAlten;
+			};
+			name = Debug;
+		};
+		CE9E319C29AFE01A000799DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59LC6PAR59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.somniso.InterviewAltenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InterviewAlten;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9E316629AFE019000799DC /* Build configuration list for PBXProject "InterviewAlten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E319229AFE01A000799DC /* Debug */,
+				CE9E319329AFE01A000799DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9E319429AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAlten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E319529AFE01A000799DC /* Debug */,
+				CE9E319629AFE01A000799DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9E319729AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAltenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E319829AFE01A000799DC /* Debug */,
+				CE9E319929AFE01A000799DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9E319A29AFE01A000799DC /* Build configuration list for PBXNativeTarget "InterviewAltenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9E319B29AFE01A000799DC /* Debug */,
+				CE9E319C29AFE01A000799DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE9E317929AFE01A000799DC /* InterviewAlten.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE9E317A29AFE01A000799DC /* InterviewAlten.xcdatamodel */,
+			);
+			currentVersion = CE9E317A29AFE01A000799DC /* InterviewAlten.xcdatamodel */;
+			path = InterviewAlten.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE9E316329AFE019000799DC /* Project object */;
+}
