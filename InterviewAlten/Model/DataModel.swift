@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DataModel: Codable  {
+struct DataModel: Codable, Equatable  {
     let id, name, description, imageUrl: String
     let price: Double
 

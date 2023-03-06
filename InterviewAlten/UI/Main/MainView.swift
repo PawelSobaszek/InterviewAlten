@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum MainViewState {
+enum MainViewState: Equatable {
     case START
     case LOADING
     case SUCCESS(datas: [DataModel])
