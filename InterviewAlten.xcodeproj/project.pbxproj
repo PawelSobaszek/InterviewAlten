@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1C968D29B6309700D1B6B0 /* LocalDataConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C968C29B6309700D1B6B0 /* LocalDataConstants.swift */; };
+		CE1C968F29B6310F00D1B6B0 /* NSManagedObjectContextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C968E29B6310F00D1B6B0 /* NSManagedObjectContextExtensions.swift */; };
+		CE1C969229B6467900D1B6B0 /* DataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C969129B6467900D1B6B0 /* DataEntity.swift */; };
+		CE1C969529B64BD300D1B6B0 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C969429B64BD300D1B6B0 /* NavigationLazyView.swift */; };
 		CE7C70ED29B0E1F300C5EF78 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C70EC29B0E1F300C5EF78 /* DetailsView.swift */; };
 		CE7C70EF29B0E38E00C5EF78 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C70EE29B0E38E00C5EF78 /* DetailsViewModel.swift */; };
 		CE7C70F429B0FB7900C5EF78 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C70F329B0FB7900C5EF78 /* URLImage.swift */; };
@@ -55,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1C968C29B6309700D1B6B0 /* LocalDataConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataConstants.swift; sourceTree = "<group>"; };
+		CE1C968E29B6310F00D1B6B0 /* NSManagedObjectContextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextExtensions.swift; sourceTree = "<group>"; };
+		CE1C969129B6467900D1B6B0 /* DataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntity.swift; sourceTree = "<group>"; };
+		CE1C969429B64BD300D1B6B0 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		CE7C70EC29B0E1F300C5EF78 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		CE7C70EE29B0E38E00C5EF78 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		CE7C70F329B0FB7900C5EF78 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
@@ -113,9 +121,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1C969029B6466D00D1B6B0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C969129B6467900D1B6B0 /* DataEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE1C969329B64BC600D1B6B0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CE1C969429B64BD300D1B6B0 /* NavigationLazyView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		CE7C70F029B0FB3300C5EF78 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CE1C969329B64BC600D1B6B0 /* Navigation */,
 				CE7C70F329B0FB7900C5EF78 /* URLImage.swift */,
 			);
 			path = Components;
@@ -175,7 +200,7 @@
 		CE9E316D29AFE019000799DC /* InterviewAlten */ = {
 			isa = PBXGroup;
 			children = (
-				CEE8014129B28BE4003B58EE /* Data */,
+				CEE8014129B28BE4003B58EE /* LocalData */,
 				CE7C710929B1196100C5EF78 /* Helpers */,
 				CE9E31A429AFE197000799DC /* Services */,
 				CE9E31A329AFE183000799DC /* Networking */,
@@ -273,17 +298,20 @@
 			children = (
 				CEAA64E229B2102D001C74D9 /* DataExtensions.swift */,
 				CEAA64E429B2103A001C74D9 /* URLRequestExtensions.swift */,
+				CE1C968E29B6310F00D1B6B0 /* NSManagedObjectContextExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CEE8014129B28BE4003B58EE /* Data */ = {
+		CEE8014129B28BE4003B58EE /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
+				CE1C969029B6466D00D1B6B0 /* Entities */,
 				CEE8014229B28CC8003B58EE /* Service */,
+				CE1C968C29B6309700D1B6B0 /* LocalDataConstants.swift */,
 				CE9E317929AFE01A000799DC /* DataModelContainer.xcdatamodeld */,
 			);
-			path = Data;
+			path = LocalData;
 			sourceTree = "<group>";
 		};
 		CEE8014229B28CC8003B58EE /* Service */ = {
@@ -426,8 +454,10 @@
 			files = (
 				CE9E31A129AFE107000799DC /* MainViewModel.swift in Sources */,
 				CEAA64E329B2102D001C74D9 /* DataExtensions.swift in Sources */,
+				CE1C969229B6467900D1B6B0 /* DataEntity.swift in Sources */,
 				CE9E31A829AFE4EF000799DC /* DataService.swift in Sources */,
 				CE7C710429B1167F00C5EF78 /* Servers.swift in Sources */,
+				CE1C968F29B6310F00D1B6B0 /* NSManagedObjectContextExtensions.swift in Sources */,
 				CE9E31A629AFE377000799DC /* DataModel.swift in Sources */,
 				CE7C70F429B0FB7900C5EF78 /* URLImage.swift in Sources */,
 				CE7C710229B1166200C5EF78 /* URLRequestBuilder.swift in Sources */,
@@ -436,7 +466,9 @@
 				CE7C710D29B1351400C5EF78 /* Endpoints.swift in Sources */,
 				CE7C710829B1169200C5EF78 /* NetworkService.swift in Sources */,
 				CE7C70ED29B0E1F300C5EF78 /* DetailsView.swift in Sources */,
+				CE1C969529B64BD300D1B6B0 /* NavigationLazyView.swift in Sources */,
 				CE9E317129AFE019000799DC /* MainView.swift in Sources */,
+				CE1C968D29B6309700D1B6B0 /* LocalDataConstants.swift in Sources */,
 				CE9E316F29AFE019000799DC /* InterviewAltenApp.swift in Sources */,
 				CE7C710F29B1357C00C5EF78 /* APIs.swift in Sources */,
 				CE7C710B29B1196E00C5EF78 /* Logger.swift in Sources */,
@@ -533,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -587,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

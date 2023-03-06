@@ -7,5 +7,5 @@
 
 import Foundation
 
-public typealias Parameters = [String: Any]
-public typealias Headers = [String: String]
+typealias Parameters = [String: Any]
+typealias Headers = [String: String]

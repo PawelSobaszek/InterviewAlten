@@ -16,6 +16,20 @@ struct DataModel: Codable  {
         case imageUrl = "image_url"
     }
     
+    init(
+        id: String,
+        name: String,
+        description: String,
+        imageUrl: String,
+        price: Double
+    ) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.imageUrl = imageUrl
+        self.price = price
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         

@@ -77,17 +77,3 @@ final class NetworkService: NetworkServiceProtocol {
         return errorToReturn ?? APIError.invalidResponse(nil, errorMessage)
     }
 }
-
-//struct DefaultErrorParser: ErrorParserType {
-//
-//     func parse(data: JSONDictionary) -> Error? {
-//        print("Error: \(data)")
-//
-//        guard let message = data["message"] as? String else {
-//            return nil
-//        }
-//
-//         return APIError.some(nil, message)
-//
-//    }
-//}

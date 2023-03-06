@@ -10,15 +10,15 @@ import SwiftUI
 import Combine
 
 protocol MainViewModelProtocol: ObservableObject {
-    var datas: [DataModel] { get }
-    var datasPublisher: Published<[DataModel]>.Publisher { get }
+    var state: MainViewState { get }
+    var statePublisher: Published<MainViewState>.Publisher { get }
  
     func fetchItems()
 }
 
 final class MainViewModel: MainViewModelProtocol {
-    @Published var datas: [DataModel] = []
-    var datasPublisher: Published<[DataModel]>.Publisher { $datas }
+    @Published var state: MainViewState = .START
+    var statePublisher: Published<MainViewState>.Publisher { $state }
     
     private let dataService: DataServiceProtocol
     private var cancellables = Set<AnyCancellable>()
@@ -31,20 +31,16 @@ final class MainViewModel: MainViewModelProtocol {
 
 extension MainViewModel {
     func fetchItems() {
-        Task {
-            try await dataService.getData()
-                .sink(receiveCompletion: { response in
-                    switch response {
-                    case .failure(let error):
-                        Log.e(error.localizedDescription)
-                        return
-                    case .finished:
-                        Log.i("Finished")
-                    }
-                }, receiveValue: { value in
-                    self.datas = value
-                })
-                .store(in: &cancellables)
+        state = .LOADING
+        dataService.getData { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let response):
+                self.state = .SUCCESS(datas: response)
+            case .failure(let error):
+                Log.e(error.localizedDescription)
+                self.state = .FAILURE(error: error.localizedDescription)
+            }
         }
     }
 }

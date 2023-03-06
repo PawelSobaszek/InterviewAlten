@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+enum MainViewState {
+    case START
+    case LOADING
+    case SUCCESS(datas: [DataModel])
+    case FAILURE(error: String)
+}
+
 struct MainView<ViewModel: MainViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
     
@@ -15,33 +22,44 @@ struct MainView<ViewModel: MainViewModelProtocol>: View {
     }
 
     var body: some View {
-        NavigationView() {
-            VStack(spacing: 0) {
-                List {
-                    ForEach(viewModel.datas, id: \.id) { data in
-                        NavigationLink(destination: NavigationLazyView(DetailsView(viewModel: DetailsViewModel(data: data)))) {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(data.name)
-                                    Text(data.getFormattedPrice())
+        switch viewModel.state {
+        case .START, .LOADING:
+            VStack() {
+                ProgressView()
+            }
+        case .SUCCESS(let datas):
+            NavigationView() {
+                VStack(spacing: 0) {
+                    List {
+                        ForEach(datas, id: \.id) { data in
+                            NavigationLink(destination: NavigationLazyView(DetailsView(viewModel: DetailsViewModel(data: data)))) {
+                                HStack {
+                                    VStack(alignment: .leading) {
+                                        Text(data.name)
+                                        Text(data.getFormattedPrice())
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    URLImage(imageUrl: data.imageUrl)
+                                        .frame(width: 50, height: 50)
+                                        .padding(.trailing)
                                 }
-                                
-                                Spacer()
-                                
-                                URLImage(imageUrl: data.imageUrl)
-                                    .frame(width: 50, height: 50)
-                                    .padding(.trailing)
                             }
                         }
+                    } // LIST
+                    
+                    Spacer()
+                    
+                    Button("Refresh") {
+                        viewModel.fetchItems()
                     }
-                } // LIST
-                
-                Spacer()
-                
-                Button("Refresh") {
-                    viewModel.fetchItems()
-                }
-            } // VSTACK
+                } // VSTACK
+            }
+        case .FAILURE(let error):
+            VStack() {
+                Text(error)
+            }
         }
     }
 }
@@ -49,17 +67,5 @@ struct MainView<ViewModel: MainViewModelProtocol>: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-    }
-}
-
-struct NavigationLazyView<Content: View>: View {
-    let build: () -> Content
-    
-    init(_ build: @autoclosure @escaping () -> Content) {
-        self.build = build
-    }
-    
-    var body: Content {
-        build()
     }
 }
