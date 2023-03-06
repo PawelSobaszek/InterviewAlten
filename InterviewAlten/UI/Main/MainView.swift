@@ -59,6 +59,10 @@ struct MainView<ViewModel: MainViewModelProtocol>: View {
         case .FAILURE(let error):
             VStack() {
                 Text(error)
+                
+                Button("Refresh") {
+                    viewModel.fetchItems()
+                }
             }
         }
     }
